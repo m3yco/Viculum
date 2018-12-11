@@ -2025,6 +2025,7 @@ GameObject:
   - component: {fileID: 816017709}
   - component: {fileID: 816017711}
   - component: {fileID: 816017710}
+  - component: {fileID: 816017712}
   m_Layer: 0
   m_Name: TextMeshPro Text
   m_TagString: Untagged
@@ -2170,6 +2171,17 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 816017708}
   m_CullTransparentMesh: 0
+--- !u!114 &816017712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 816017708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e7361635c6080cf478d0bc734b8f240d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &843576407
 GameObject:
   m_ObjectHideFlags: 0
