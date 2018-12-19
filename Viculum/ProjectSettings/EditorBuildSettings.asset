@@ -11,4 +11,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: f4cbcf891908a964d9a0ea27dab90e25
+  - enabled: 1
+    path: Assets/Scenes/Direction.unity
+    guid: 429ebf686b63d3c43a5d984110445352
+  - enabled: 1
+    path: Assets/Scenes/Semester.unity
+    guid: 15d25940215db9b4b8ec40d824930a82
+  - enabled: 1
+    path: Assets/Scenes/Modul.unity
+    guid: d70f6269afd4b934990a38d23f5e3ebe
+  - enabled: 1
+    path: Assets/Scenes/Room.unity
+    guid: e3502d3e1767ebd41922634c91107dd3
   m_configObjects: {}

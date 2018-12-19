@@ -16,7 +16,7 @@ public class RoomImage : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String select = "select beispiel from modulbeispiel where modulbeispielid=1";
+    String select = "select beispiel from modulmedium where modulmediumid=1";
     OracleConnection con = new OracleConnection();
 
     void Start()
