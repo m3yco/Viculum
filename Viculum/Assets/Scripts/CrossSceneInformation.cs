@@ -54,4 +54,17 @@ public static class CrossSceneInformation {
             modul = value;
         }
     }
+
+    // ModulId
+    public static string modulId
+    {
+        get
+        {
+            return modulId;
+        }
+        set
+        {
+            modulId = value;
+        }
+    }
 }
