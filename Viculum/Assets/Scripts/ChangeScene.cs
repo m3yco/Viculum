@@ -5,6 +5,8 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using Oracle.ManagedDataAccess.Client;
 using System;
+using UnityEngine.UI;
+using TMPro;
 
 public class ChangeScene : MonoBehaviour {
     private string result;
@@ -13,7 +15,9 @@ public class ChangeScene : MonoBehaviour {
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 0:
-                CrossSceneInformation.faculty = EventSystem.current.currentSelectedGameObject.name;
+                TextMeshProUGUI txt = GameObject.Find(EventSystem.current.currentSelectedGameObject.name + "/Text").GetComponent<TextMeshProUGUI>();
+                CrossSceneInformation.faculty = txt.text; //gleich Id speichern!?
+                Debug.Log(CrossSceneInformation.faculty);
                 break;
             case 1:
                 CrossSceneInformation.direction = EventSystem.current.currentSelectedGameObject.name;
@@ -40,9 +44,6 @@ public class ChangeScene : MonoBehaviour {
 
     public void getId()
     {
-        // Umwandeln von Modulnamen zur id! -> neue Methode der aus Modulname Modulid holt und in
-        // CrossSceneInformation.modulId speichert!
-        // select modulid from modul where bezeichnung='+ CrossSceneInformation.modul +';
         String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
            "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
@@ -54,7 +55,6 @@ public class ChangeScene : MonoBehaviour {
         try
         {
             con.ConnectionString = connectionString;
-
             con.Open();
 
             OracleCommand cmd = new OracleCommand(select, con);

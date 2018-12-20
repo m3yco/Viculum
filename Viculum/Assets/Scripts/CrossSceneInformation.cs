@@ -4,67 +4,17 @@ using UnityEngine;
 
 public static class CrossSceneInformation {
     // Auswahl der Fakultät
-    public static string faculty
-    {
-        get
-        {
-            return faculty;
-        }
-        set
-        {
-            faculty = value;
-        }
-    }
+    public static string faculty;
 
     // Auswahl des Studiengangs
-    public static string direction
-    {
-        get
-        {
-            return direction;
-        }
-        set
-        {
-            direction = value;
-        }
-    }
+    public static string direction;
 
     // Auswahl des Semesters
-    public static string semester
-    {
-        get
-        {
-            return semester;
-        }
-        set
-        {
-            semester = value;
-        }
-    }
+    public static string semester;
 
     // Auswahl des Moduls
-    public static string modul
-    {
-        get
-        {
-            return modul;
-        }
-        set
-        {
-            modul = value;
-        }
-    }
+    public static string modul;
 
     // ModulId
-    public static string modulId
-    {
-        get
-        {
-            return modulId;
-        }
-        set
-        {
-            modulId = value;
-        }
-    }
+    public static string modulId;
 }
