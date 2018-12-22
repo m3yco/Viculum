@@ -12,9 +12,9 @@ public static class CrossSceneInformation {
     // Auswahl des Semesters
     public static string semester;
 
+    // Auswahl der Vertiefung
+    public static string extension;
+
     // Auswahl des Moduls
     public static string modul;
-
-    // ModulId
-    public static string modulId;
 }

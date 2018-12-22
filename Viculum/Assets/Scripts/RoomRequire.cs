@@ -44,7 +44,7 @@ public class RoomRequire : MonoBehaviour
             result += "\nAufbau Veranstaltungen:\n\n";
             select = "select bezeichnung from modul where modulid in" +
                 "(select x.obermodulid from modul v, empfehlung x " +
-                "where v.modulid = x.untermodulid and x.untermodulid = 21000)";
+                "where v.modulid = x.untermodulid and x.untermodulid = " + CrossSceneInformation.modul + ")";
 
             cmd = new OracleCommand(select, con);
             cmd.CommandType = System.Data.CommandType.Text;

@@ -19,7 +19,7 @@ public class RoomKnowledge: MonoBehaviour
 
 
     String select = "select z.bezeichnung from ziel z, kenntnis k, zielvorstellung v " +
-        "where z.zielid=k.zielid and k.zielid =v.zielid and v.modulid = 12500";
+        "where z.zielid=k.zielid and k.zielid =v.zielid and v.modulid = " + CrossSceneInformation.modul + "";
 
     OracleConnection con = new OracleConnection();
     void Start()

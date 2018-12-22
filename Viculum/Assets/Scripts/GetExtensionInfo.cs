@@ -2,15 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Oracle.ManagedDataAccess.Client;
 using TMPro;
+using Oracle.ManagedDataAccess.Client;
 using System;
 
-
-public class RoomModul : MonoBehaviour
+public class GetExtensionInfo : MonoBehaviour
 {
-    private TextMeshProUGUI txt;
-    private string result;
+    public TextMeshProUGUI ext1;
+    public TextMeshProUGUI ext2;
+    public TextMeshProUGUI ext3;
+    public TextMeshProUGUI ext4;
 
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
@@ -18,12 +19,20 @@ public class RoomModul : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String select = "select wahl from semesterveranstaltung where modulid = " + CrossSceneInformation.modul + "";
+    String select = "select bezeichnung from wahlrichtung";
 
     OracleConnection con = new OracleConnection();
+
+    // Use this for initialization
     void Start()
     {
-        txt = GetComponent<TextMeshProUGUI>();
+        List<TextMeshProUGUI> extensions = new List<TextMeshProUGUI>();
+        List<String> result = new List<String>();
+        extensions.Add(ext1);
+        extensions.Add(ext2);
+        extensions.Add(ext3);
+        extensions.Add(ext4);
+
         try
         {
             con.ConnectionString = connectionString;
@@ -36,11 +45,15 @@ public class RoomModul : MonoBehaviour
             while (dr.Read())
             {
                 string Bezeichnung = (string)dr.GetValue(0);
-                result += Bezeichnung;
+                result.Add(Bezeichnung);
             }
-            txt.text = result;
-            Debug.Log(result);
             dr.Dispose();
+
+            for (int i = 0; i < 4; i++)
+            {
+                TextMeshProUGUI txt = extensions[i].GetComponent<TextMeshProUGUI>();
+                txt.text = result[i];
+            }
         }
         catch (Exception ex)
         {

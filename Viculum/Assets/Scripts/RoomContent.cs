@@ -19,7 +19,7 @@ public class RoomContent : MonoBehaviour
 
 
     String select = "select i.bezeichnung from modul x, inhalt i, inhaltvorstellung v "
-                        + "where x.modulid = 12500 and x.modulid= v.modulid and i.inhaltid=v.inhaltid";
+                        + "where x.modulid = " + CrossSceneInformation.modul + " and x.modulid= v.modulid and i.inhaltid=v.inhaltid";
 
     OracleConnection con = new OracleConnection();
     void Start()

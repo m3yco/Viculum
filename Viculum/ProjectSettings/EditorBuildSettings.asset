@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Semester.unity
     guid: 15d25940215db9b4b8ec40d824930a82
   - enabled: 1
+    path: Assets/Scenes/ChosenExtention.unity
+    guid: 70e8c908af501f944b0fc08e7f7ab333
+  - enabled: 1
     path: Assets/Scenes/Modul.unity
     guid: d70f6269afd4b934990a38d23f5e3ebe
   - enabled: 1

@@ -18,7 +18,7 @@ public class RoomDuration : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String select = "select dauer from modul where modulid = 12500";
+    String select = "select dauer from modul where modulid = " + CrossSceneInformation.modul + "";
 
     OracleConnection con = new OracleConnection();
     void Start()

@@ -18,7 +18,7 @@ public class RoomCaption : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String select = "select bezeichnung from modul where modulid = 12500";
+    String select = "select bezeichnung from modul where modulid = "+ CrossSceneInformation.modul +"";
 
     OracleConnection con = new OracleConnection();
     void Start()

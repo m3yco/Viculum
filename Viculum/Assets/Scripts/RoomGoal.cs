@@ -19,7 +19,7 @@ public class RoomGoal : MonoBehaviour
 
 
     String select = "select z.bezeichnung from ziel z, zielvorstellung v " +"" +
-        "where z.zielid = v.zielid and v.modulid = 12500";
+        "where z.zielid = v.zielid and v.modulid = " + CrossSceneInformation.modul + "";
 
     OracleConnection con = new OracleConnection();
     void Start()

@@ -11,12 +11,12 @@ public class StreamVideo : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        StartCoroutine(PlayVideo());
+        //StartCoroutine(PlayVideo());
 	}
 	
 	IEnumerator PlayVideo()
     {
-        WaitForSeconds wait = new WaitForSeconds(5);
+        WaitForSeconds wait = new WaitForSeconds(1);
         videoPlayer.url = Application.dataPath + "/Video/" + "zsmall.mp4";
         videoPlayer.Prepare();
         wait = new WaitForSeconds(1);
@@ -27,5 +27,13 @@ public class StreamVideo : MonoBehaviour {
         }
         rawImage.texture = videoPlayer.texture;
         videoPlayer.Play();
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.P) && UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            StartCoroutine(PlayVideo());
+        }
     }
 }

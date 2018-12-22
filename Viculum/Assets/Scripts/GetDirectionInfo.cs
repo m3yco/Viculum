@@ -2,15 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Oracle.ManagedDataAccess.Client;
 using TMPro;
+using Oracle.ManagedDataAccess.Client;
 using System;
 
-
-public class RoomModul : MonoBehaviour
+public class GetDirectionInfo : MonoBehaviour
 {
-    private TextMeshProUGUI txt;
-    private string result;
+    public TextMeshProUGUI dir1;
+    public TextMeshProUGUI dir2;
+    public TextMeshProUGUI dir3;
+    public TextMeshProUGUI dir4;
+    public TextMeshProUGUI dir5;
+    public TextMeshProUGUI dir6;
+    public TextMeshProUGUI dir7;
 
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
@@ -18,12 +22,23 @@ public class RoomModul : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String select = "select wahl from semesterveranstaltung where modulid = " + CrossSceneInformation.modul + "";
+    String select = "select bezeichnung from studiengang where fakultaetid = "+ CrossSceneInformation.faculty  + "";
 
     OracleConnection con = new OracleConnection();
+
+    // Use this for initialization
     void Start()
     {
-        txt = GetComponent<TextMeshProUGUI>();
+        List<TextMeshProUGUI> directions = new List<TextMeshProUGUI>();
+        List<String> result = new List<String>();
+        directions.Add(dir1);
+        directions.Add(dir2);
+        directions.Add(dir3);
+        directions.Add(dir4);
+        directions.Add(dir5);
+        directions.Add(dir6);
+        directions.Add(dir7);
+
         try
         {
             con.ConnectionString = connectionString;
@@ -36,11 +51,15 @@ public class RoomModul : MonoBehaviour
             while (dr.Read())
             {
                 string Bezeichnung = (string)dr.GetValue(0);
-                result += Bezeichnung;
+                result.Add(Bezeichnung);
             }
-            txt.text = result;
-            Debug.Log(result);
             dr.Dispose();
+
+            for (int i = 0; i < directions.Count; i++)
+            {
+                TextMeshProUGUI txt = directions[i].GetComponent<TextMeshProUGUI>();
+                txt.text = result[i];
+            }
         }
         catch (Exception ex)
         {
@@ -55,3 +74,4 @@ public class RoomModul : MonoBehaviour
         }
     }
 }
+

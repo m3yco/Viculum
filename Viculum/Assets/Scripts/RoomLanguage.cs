@@ -19,7 +19,7 @@ public class RoomLanguage : MonoBehaviour
 
 
     String select = "select s.bezeichnung from sprache s, modulsprache v " +
-        "where s.spracheid = v.spracheid and modulid = 12500";
+        "where s.spracheid = v.spracheid and modulid = " + CrossSceneInformation.modul + "";
 
     OracleConnection con = new OracleConnection();
     void Start()

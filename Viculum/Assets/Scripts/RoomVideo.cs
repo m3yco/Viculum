@@ -18,8 +18,8 @@ public class RoomVideo : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String selectData = "SELECT beispiel FROM Modulbeispiel WHERE modulbeispielid = 13";
-    String selectName = "SELECT beispielname FROM Modulbeispiel WHERE modulbeispielid = 13";
+    String selectData = "SELECT beispiel FROM Modulmedium WHERE modulmediumid = 14";
+    String selectName = "SELECT beispielname FROM Modulmedium WHERE modulmediumid = 14";
 
     String dataName = "";
 

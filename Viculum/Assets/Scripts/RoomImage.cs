@@ -9,7 +9,7 @@ using System;
 public class RoomImage : MonoBehaviour
 {
     
-    private Image pic;
+    public Image pic;
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
            "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
@@ -36,7 +36,7 @@ public class RoomImage : MonoBehaviour
             {
                 byte[] img = (byte[])dr["Beispiel"];
                 result.LoadImage(img);
-                //imgage 266x199
+                //imgage 628x502
                 pic.sprite = Sprite.Create(result, new Rect(0, 0, 628, 502), new Vector2(0.5f, 0.5f));
             }
             //GetComponent<Renderer>().material.mainTexture = result;
