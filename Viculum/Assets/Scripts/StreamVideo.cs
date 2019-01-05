@@ -17,7 +17,7 @@ public class StreamVideo : MonoBehaviour {
 	IEnumerator PlayVideo()
     {
         WaitForSeconds wait = new WaitForSeconds(1);
-        videoPlayer.url = Application.dataPath + "/Video/" + "zsmall.mp4";
+        videoPlayer.url = Application.dataPath + "/Video/" + CrossSceneInformation.video;
         videoPlayer.Prepare();
         wait = new WaitForSeconds(1);
         while (!videoPlayer.isPrepared)

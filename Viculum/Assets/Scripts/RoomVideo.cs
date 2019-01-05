@@ -18,8 +18,12 @@ public class RoomVideo : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String selectData = "SELECT beispiel FROM Modulmedium WHERE modulmediumid = 14";
-    String selectName = "SELECT beispielname FROM Modulmedium WHERE modulmediumid = 14";
+    String selectData = "select BEISPIEL from MODULMEDIUM where dateiformat = '.mp4' and MODULMEDIUMID in " +
+                    "(select MODULMEDIUMID from VERANSTALTUNGSMATERIAL where SEMESTERVERANSTALTUNGID in " +
+                    "(select SEMESTERVERANSTALTUNGID from SEMESTERVERANSTALTUNG where SEMESTERVERANSTALTUNG.MODULID=" + CrossSceneInformation.modul + "))";
+    String selectName = "select BEISPIELNAME from MODULMEDIUM where dateiformat = '.mp4' and MODULMEDIUMID in " +
+                    "(select MODULMEDIUMID from VERANSTALTUNGSMATERIAL where SEMESTERVERANSTALTUNGID in " +
+                    "(select SEMESTERVERANSTALTUNGID from SEMESTERVERANSTALTUNG where SEMESTERVERANSTALTUNG.MODULID=" + CrossSceneInformation.modul + "))";
 
     String dataName = "";
 
@@ -37,23 +41,25 @@ public class RoomVideo : MonoBehaviour
             OracleCommand cmdName = new OracleCommand(selectName, con);
             cmdName.CommandType = System.Data.CommandType.Text;
             OracleDataReader drName = cmdName.ExecuteReader();
-            OracleCommand cmdData = new OracleCommand(selectData, con);
-            cmdData.CommandType = System.Data.CommandType.Text;
-            OracleDataReader drData = cmdData.ExecuteReader();
+            //OracleCommand cmdData = new OracleCommand(selectData, con);
+            //cmdData.CommandType = System.Data.CommandType.Text;
+            //OracleDataReader drData = cmdData.ExecuteReader();
             while (drName.Read())
             {
                 dataName = (string)drName.GetValue(0);
+                CrossSceneInformation.video = dataName;
             }
             drName.Dispose();
-            while (drData.Read())
-            {
-                byte[] videoByte = (byte[])drData["Beispiel"];
-                File.WriteAllBytes((@Application.dataPath + "/Video/" + dataName), videoByte);
-                // File.WriteAllBytes(@"C:\Users\dizep\Desktop" + dataName, videoByte);
-            }
-            result = Application.dataPath;
-            txt.text = result;
-            drData.Dispose();
+            //while (drData.Read())
+            //{
+            //    byte[] videoByte = (byte[])drData["Beispiel"];
+            //    File.WriteAllBytes((@Application.dataPath + "/Video/" + dataName), videoByte);
+
+            //    File.WriteAllBytes(@"C:\Users\dizep\Desktop" + dataName, videoByte);
+            //}
+            //result = Application.dataPath;
+            //txt.text = result;
+            //drData.Dispose();
         }
         catch (Exception ex)
         {

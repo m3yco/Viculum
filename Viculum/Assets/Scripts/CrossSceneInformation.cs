@@ -17,4 +17,7 @@ public static class CrossSceneInformation {
 
     // Auswahl des Moduls
     public static string modul;
+
+    // Video Name
+    public static string video;
 }

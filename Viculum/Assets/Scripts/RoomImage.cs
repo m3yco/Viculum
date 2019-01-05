@@ -16,7 +16,9 @@ public class RoomImage : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
 
-    String select = "select beispiel from modulmedium where modulmediumid=1";
+    String select = "select BEISPIEL from MODULMEDIUM where dateiformat = '.png' and MODULMEDIUMID in "+
+                    "(select MODULMEDIUMID from VERANSTALTUNGSMATERIAL where SEMESTERVERANSTALTUNGID in "+
+                    "(select SEMESTERVERANSTALTUNGID from SEMESTERVERANSTALTUNG where SEMESTERVERANSTALTUNG.MODULID=" + CrossSceneInformation.modul + "))";
     OracleConnection con = new OracleConnection();
 
     void Start()
@@ -36,8 +38,8 @@ public class RoomImage : MonoBehaviour
             {
                 byte[] img = (byte[])dr["Beispiel"];
                 result.LoadImage(img);
-                //imgage 628x502
-                pic.sprite = Sprite.Create(result, new Rect(0, 0, 628, 502), new Vector2(0.5f, 0.5f));
+                //imgage 800x600
+                pic.sprite = Sprite.Create(result, new Rect(0, 0, 800, 600), new Vector2(0.5f, 0.5f));
             }
             //GetComponent<Renderer>().material.mainTexture = result;
             dr.Dispose();

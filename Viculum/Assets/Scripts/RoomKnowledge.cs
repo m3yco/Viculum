@@ -10,7 +10,7 @@ using System;
 public class RoomKnowledge: MonoBehaviour
 {
     private TextMeshProUGUI txt;
-    private string result = "Kenntnissers:\n\n";
+    private string result = "Kenntnisse:\n\n";
 
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +

@@ -30,7 +30,7 @@ public class RoomRequire : MonoBehaviour
 
             String select = "select bezeichnung from modul where modulid in"
                                 + "(select x.untermodulid from modul v, empfehlung x "
-                                + "where v.modulid = x.obermodulid and x.obermodulid = 21000)";
+                                + "where v.modulid = x.obermodulid and x.obermodulid = " + CrossSceneInformation.modul + ")";
 
             OracleCommand cmd = new OracleCommand(select, con);
             cmd.CommandType = System.Data.CommandType.Text;
