@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
+﻿
 public static class CrossSceneInformation {
     // Auswahl der Fakultät
     public static string faculty;

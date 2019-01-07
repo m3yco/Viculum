@@ -1,11 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
+﻿using UnityEngine;
 using Oracle.ManagedDataAccess.Client;
 using System;
 using TMPro;
-using System.IO;
 
 public class RoomVideo : MonoBehaviour
 {
