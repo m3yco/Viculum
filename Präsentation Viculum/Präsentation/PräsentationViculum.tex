@@ -89,7 +89,7 @@
 \author{Prof. Dr. Jörg Röhrle} % Your name
 \institute[HSALBSIG] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
 {
-Hochschule Albstadt-Sigamringen \\ % Your institution for the title page
+Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 \medskip
 \textit{Domenico Milazzo (TI), milazzdo@hs-albsig.de} % Your email address
 \newline
@@ -112,7 +112,7 @@ Hochschule Albstadt-Sigamringen \\ % Your institution for the title page
 \item Idee \& Features
 \item Datenmodell
 \item Datenzugriff
-\item Live Demo \& Aussiechten
+\item Live Demo \& Aussichten
 \end{itemize}
 \end{frame}
 
@@ -127,6 +127,7 @@ Hochschule Albstadt-Sigamringen \\ % Your institution for the title page
 Viculum ist ein virtuelles Curriculum um die Modulhandbücher jeder Veranstaltungen der Hochschule Albstadt-Sigmaringen mit verschiedensten Medien und einem dynamischen Zugriff aus einer Datenbank zu visualisieren.\\~\\
 
 \begin{itemize}
+\item Erste Hochschule mit diesem Konzept eines "virtuellen Rundgang"
 \item Oracle Datenbank als Speichermedium
 \item Unity als Visualisierung Tool der Virtual Reality
 \item Dynamischen Aufbau der Szenen um Objekte
@@ -155,11 +156,11 @@ Viculum ist ein virtuelles Curriculum um die Modulhandbücher jeder Veranstaltun
 
 \textbf{Ablauf}
 \begin{enumerate}
-\item Szenen starten und holt sich aus der Statischen Klasse die Informationen aus der vorherigen Szene.
-\item leeres GameObjekt wird angestoßen und mit den Szenen Information gefüttert.
-\item Das C\# Script des leeren GameObjekt wird ausgeführt.
-\item Datenbankzugriff auf die Oracle Datenbank und deren Auswertung.
-\item Die Informationen der Auswerten werden im Object angezeigt.
+\item Szenen wird gestartet und holt sich aus der statischen Klasse die Informationen aus der vorherigen Szene.
+\item Leeres Objekt wird angestoßen und mit den Szeneninformation gefüllt.
+\item Das C\# Script des leeren Objekt wird ausgeführt.
+\item Datenbankzugriff auf die Oracle Datenbank durch Select Statement und deren Auswertung.
+\item Die Informationen der Auswertung werden im Objekt angezeigt.
 \end{enumerate}
 
 \column{.3\textwidth} % Right column and width
@@ -167,10 +168,10 @@ Viculum ist ein virtuelles Curriculum um die Modulhandbücher jeder Veranstaltun
     every node/.style={fill=white, font=\sffamily}, align=center]
   % Specification of nodes (position, etc.)
   \node (start)             [activityStarts]              	{Szenen start};
-  \node (Object)     [process, below of=start]  {Object anstoßen};
+  \node (Object)     [process, below of=start]  {Objekt anstoßen};
   \node (Script)      [process, below of=Object]{Script ausführen};
   \node (DB)     [process, below of=Script]   		{Datenbankzugriff};
-  \node (end)      [activityRuns, below of=DB]		{Object mit Daten befüllt};   
+  \node (end)      [activityRuns, below of=DB]		{Objekt mit Daten befüllt};   
   % Specification of lines between nodes specified above
   % with aditional nodes for description 
   \draw[->]             (start) -- (Object);

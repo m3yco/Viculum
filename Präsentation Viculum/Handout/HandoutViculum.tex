@@ -10,9 +10,10 @@
 
 \usepackage[svgnames]{xcolor} % Specify colors by their 'svgnames', for a full list of all colors available see here: http://www.latextemplates.com/svgnames-colors
 
+\usepackage[onehalfspacing]{setspace}
 \usepackage{times} % Use the times font
 %\usepackage{palatino} % Uncomment to use the Palatino font
-
+\usepackage[ngerman]{babel}
 \usepackage{graphicx} % Required for including images
 \graphicspath{{figures/}} % Location of the graphics files
 \usepackage{booktabs} % Top and bottom rules for table
@@ -51,18 +52,28 @@
 % The second is 25% wide and houses a logo for your university/organization or a photo of you
 % The widths of these boxes can be easily edited to accommodate your content as you see fit
 
-\begin{minipage}[b]{1\linewidth}
+\begin{minipage}[b]{0.90\linewidth}
+\begin{singlespace}
 \veryHuge \color{NavyBlue} \textbf{Konzept und Realisierung eines virtuellen Themenrundgangs der Fakultät Informatik zur Unterstützung bei der Studienwahl} \color{Black}\\ % Title
 \Huge\textit{Handout Viculum}\\[2cm] % Subtitle
-\huge \textbf{Prof. Dr. Jörg Röhrle}\\[0.5cm] % Author(s)
-\huge Domenico Milazzo (TI)\\[0.3cm] % University/organization
-\huge Maik Dürr (TI)\\[0.3cm] % University/organization
-\huge Fabian Altenberg (WIN)\\[0.3cm] % University/organization
+\end{singlespace}
+\end{minipage}
 
+\begin{minipage}[b]{0.55\linewidth}
+\begin{singlespace}
+\huge \textbf{Prof. Dr. Jörg Röhrle}\\[0.5cm] 
+\huge Domenico Milazzo (TI)\\[0.3cm] 
+\huge Maik Dürr (TI)\\[0.3cm] 
+\huge Fabian Altenberg (WIN)\\[0.3cm] 
+\end{singlespace} 
+\end{minipage}
+%
+\begin{minipage}[b]{0.25\linewidth}
+\includegraphics[width=28cm]{hsas_logo.png}\\
 \end{minipage}
 %
 
-\vspace{1cm} % A bit of extra whitespace between the header and poster content
+
 
 %----------------------------------------------------------------------------------------
 
@@ -76,44 +87,41 @@
 
 \section*{\huge Einleitung}
 
-{\LARGE Viculum ist ein virtuelles Curriculum um die Modulhandbücher jeder Veranstaltungen der Hochschule Albstadt-Sigmaringen mit verschiedensten Medien und einem dynamischen Zugriff aus einer Datenbank zu visualisieren.\\}
+\begin{doublespace}
+{\LARGE Viculum ist ein virtuelles Curriculum um die Modulhandbücher jeder Veranstaltungen der Hochschule Albstadt-Sigmaringen mit verschiedensten Medien und einem dynamischen Zugriff aus einer Datenbank zu visualisieren.} 
+\end{doublespace}
+
+
+
+%------------------------------------------------
+\section*{\huge Snapshots}
+\begin{center}
+
+\captionof{figure}{Auswahlmenü}
+\includegraphics[width=0.4\textwidth]{ViculumStart.png}
+\captionof{figure}{Labels im Virtual Reality Raum}
+\includegraphics[width=0.4\textwidth]{ViculumRoom1.png}
+\captionof{figure}{Medien im Virtual Reality Raum}
+\includegraphics[width=0.4\textwidth]{ViculumRoom2.png}
+
+\end{center}
 
 %----------------------------------------------------------------------------------------
 %	IDEEN & FEATURES
 %----------------------------------------------------------------------------------------
-\vspace{1cm} % A bit of extra whitespace between the header and poster content
 \color{Black} % DarkSlateGray color for the rest of the content
 
 \section*{\huge Features}
 
+\begin{doublespace}
 \begin{itemize}
+\item {\LARGE Erste Hochschule mit diesem Konzept}
 \item {\LARGE Oracle Datenbank als Speichermedium}
 \item {\LARGE Unity als Visualisierung Tool der Virtual Reality}
 \item {\LARGE Dynamischen Aufbau der Szenen um Objekte}
 \item {\LARGE Bilder \& Video als zusätzliche Medien}
 \end{itemize}
-
-
-%------------------------------------------------
-\vspace{1cm} % A bit of extra whitespace between the header and poster content
-\section*{\huge Datenzugriff}
-\begin{center}
-\begin{tikzpicture}[node distance=10cm,
-    every node/.style={fill=white, font=\sffamily}, align=center]
-  % Specification of nodes (position, etc.)
-  \node (start)             [activityStarts]              	{\LARGE Szenen start};
-  \node (GameObject)     [process, below of=start]  {\LARGE Object anstoßen};
-  \node (Script)      [process, below of=GameObject]{\LARGE Script ausführen};
-  \node (DB)     [process, below of=Script]   		{\LARGE Datenbankzugriff};
-  \node (end)      [activityRuns, below of=DB]		{\LARGE Object mit Daten befüllt};   
-  % Specification of lines between nodes specified above
-  % with aditional nodes for description 
-  \draw[->]             (start) -- node[text width=15cm]{\Large Szenen starten und holt sich aus der Statischen Klasse die Informationen aus der vorherigen Szene}(GameObject);
-  \draw[->]     		(GameObject) -- node[text width=15cm]{\Large leeres Objekt wird angestoßen und mit den Szenen Information gefüttert}(Script);
-  \draw[->]      		(Script) -- node[text width=15cm]{\Large Das C\# Script des leeren Objekt wird ausgeführt}(DB);
-  \draw[->]     		(DB) -- node[text width=15cm]{\Large Datenbankzugriff auf die Oracle Datenbank durch Select Satement und deren Auswertung wird im Object angezeigt}(end);
-  \end{tikzpicture}
-\end{center}
+\end{doublespace}
 
 %----------------------------------------------------------------------------------------
 %	CONCLUSIONS
@@ -122,18 +130,14 @@
 
 \section*{\huge Aussichten}
 
+\begin{doublespace}
 \begin{itemize}
-\item {\LARGE Pellentesque eget orci eros. Fusce ultricies, tellus et pellentesque fringilla, ante massa luctus libero, quis tristique purus urna nec nibh. Phasellus fermentum rutrum elementum. Nam quis justo lectus.}
-
-\item {\LARGE Vestibulum sem ante, hendrerit a gravida ac, blandit quis magna.}
-
-\item {\LARGE Donec sem metus, facilisis at condimentum eget, vehicula ut massa. Morbi consequat, diam sed convallis tincidunt, arcu nunc.}
-
-\item {\LARGE Nunc at convallis urna. isus ante. Pellentesque condimentum dui. Etiam sagittis purus non tellus tempor volutpat. Donec et dui non massa tristique adipiscing.}
+\item {\LARGE Auswertung der Schüler Umfragen}
+\item {\LARGE Animationen \& Assets}
+\item {\LARGE Implementierung in eine Webanwendung}
+\item {\LARGE Konzept auch in vergleichbare Bereiche übertragbar}
 \end{itemize}
-
-\vspace{2cm} % A bit of extra whitespace between the header and poster content
-
+\end{doublespace}
 
 %----------------------------------------------------------------------------------------
 %	Kontaktdaten 
@@ -141,8 +145,6 @@
 \color{Black}
 \section*{\huge Kontaktdaten}
 
-
-\vspace{1cm} % A bit of extra whitespace between the header and poster content
 
 {\huge Domenico Milazzo}\\[1cm] % Your name
 {\LARGE 
@@ -157,9 +159,9 @@ Email: \href{mailto:milazzdo@hs-albsig.de}{milazzdo@hs-albsig.de} % Your email a
 
 {\huge\flushleft Maik Dürr}\\[1cm] % Your name
 {\LARGE 
-Wahlentalstraße 38\\
-72461 Albstadt\\
-Telefon: \texttt{0172/2441256}\\ % Your phone number
+Forchenweg 6\\
+72336 Zillhausen\\
+Telefon: \texttt{0174/9530195}\\ % Your phone number
 Email: \href{mailto:duerrmai@hs-albsig.de}{duerrmai@hs-albsig.de} % Your email address
 
 }
@@ -168,16 +170,13 @@ Email: \href{mailto:duerrmai@hs-albsig.de}{duerrmai@hs-albsig.de} % Your email a
 
 {\huge\flushleft Fabian Altenberg}\\[1cm] % Your name
 {\LARGE 
-Wahlentalstraße 38\\
-72461 Albstadt\\
-Telefon: \texttt{0172/2441256}\\ % Your phone number
+Am Mühlkanal 2\\
+72469 Meßstetten\\
+Telefon: \texttt{0176/41400651}\\ % Your phone number
 Email: \href{mailto:altenbfa@hs-albsig.de}{altenbfa@hs-albsig.de} % Your email address
 
 }
 \hrule
-\vspace{2cm}
 
-
-\includegraphics[width=0.3\textwidth]{hsas_logo.png}
 \end{multicols}
 \end{document}
