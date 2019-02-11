@@ -9,6 +9,7 @@ using System;
 
 public class RoomDuration : MonoBehaviour
 {
+    // Zeigt die Minuten einer Veranstaltung an, aus der Datenbank.
     private TextMeshProUGUI txt;
     private string result;
 

@@ -7,6 +7,7 @@ using Oracle.ManagedDataAccess.Client;
 using System;
 
 public class GetSemesterInfo : MonoBehaviour {
+    // Initialisierung der Variablen die dem GameObject zugewiesen wurden.
     public TextMeshProUGUI sem1;
     public TextMeshProUGUI sem2;
     public TextMeshProUGUI sem3;
@@ -15,6 +16,7 @@ public class GetSemesterInfo : MonoBehaviour {
     public TextMeshProUGUI sem6;
     public TextMeshProUGUI sem7;
 
+    // JDBC Connection String zur Oracle Datenbank.
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
            "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
@@ -27,6 +29,7 @@ public class GetSemesterInfo : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        // Alle Variablen in eine Liste eingefügt.
         List<TextMeshProUGUI> semester = new List<TextMeshProUGUI>();
         List<String> result = new List<String>();
         semester.Add(sem1);

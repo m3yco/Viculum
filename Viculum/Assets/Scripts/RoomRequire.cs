@@ -6,6 +6,8 @@ using System;
 
 public class RoomRequire : MonoBehaviour
 {
+    // Hier wird die Baumstruktur geladen und dadurch angezeigt welche Veranstaltungen besucht
+    // werden müssen, um die Vorrausetzungen für die ausgewählte Veranstaltung zu erfüllen.
     private TextMeshProUGUI txt;
     private string result;
 
@@ -38,6 +40,8 @@ public class RoomRequire : MonoBehaviour
                 result += "+ " + Bezeichnung + "\n";
             }
 
+            // Hier werden alle Namen der Veranstaltung geladen die, diese Veranstaltung als
+            // voraussetzung haben.
             result += "\nAufbau Veranstaltungen:\n\n";
             select = "select bezeichnung from modul where modulid in" +
                 "(select x.obermodulid from modul v, empfehlung x " +

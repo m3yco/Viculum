@@ -7,6 +7,7 @@ using Oracle.ManagedDataAccess.Client;
 using System;
 
 public class GetModulInfo : MonoBehaviour {
+    // Initialisierung der Variablen die dem GameObject zugewiesen wurden.
     public TextMeshProUGUI mod1;
     public TextMeshProUGUI mod2;
     public TextMeshProUGUI mod3;
@@ -20,6 +21,7 @@ public class GetModulInfo : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        // Alle Variablen in eine Liste eingefügt.
         List<TextMeshProUGUI> modules = new List<TextMeshProUGUI>();
         List<String> result = new List<String>();
         modules.Add(mod1);
@@ -32,6 +34,7 @@ public class GetModulInfo : MonoBehaviour {
         modules.Add(mod8);
         modules.Add(mod9);
 
+        // JDBC Connection String zur Oracle Datenbank.
         String connectionString = "Data Source=(DESCRIPTION=" +
                "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
                "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
@@ -40,7 +43,8 @@ public class GetModulInfo : MonoBehaviour {
         String select = "select m.bezeichnung from modul m, semesterveranstaltung s where s.semesterid= " + CrossSceneInformation.semester + " and m.modulid = s.modulid group by m.bezeichnung";
 
         OracleConnection con = new OracleConnection();
-
+        // Es werden verschiedene selects durchgeführt weil je nach den welches Semester man wählt muss
+        // die Vertiefung gewählt werden.
         if (CrossSceneInformation.semester == "5" || CrossSceneInformation.semester == "7")
         {
             select = "select m.bezeichnung from wahlrichtung w, semesterveranstaltung s, modul m  where w.wahlrichtungid = " + CrossSceneInformation.extension + " and s.wahlrichtungid = w.wahlrichtungid and m.modulid = s.modulid and s.semesterid = " + CrossSceneInformation.semester + "";

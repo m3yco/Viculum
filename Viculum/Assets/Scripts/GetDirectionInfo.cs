@@ -8,6 +8,7 @@ using System;
 
 public class GetDirectionInfo : MonoBehaviour
 {
+    // Initialisierung der Variablen die dem GameObject zugewiesen wurden.
     public TextMeshProUGUI dir1;
     public TextMeshProUGUI dir2;
     public TextMeshProUGUI dir3;
@@ -16,6 +17,7 @@ public class GetDirectionInfo : MonoBehaviour
     public TextMeshProUGUI dir6;
     public TextMeshProUGUI dir7;
 
+    // JDBC Connection String zur Oracle Datenbank.
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
            "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
@@ -29,6 +31,7 @@ public class GetDirectionInfo : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // Alle Variablen in eine Liste eingefügt.
         List<TextMeshProUGUI> directions = new List<TextMeshProUGUI>();
         List<String> result = new List<String>();
         directions.Add(dir1);
@@ -58,6 +61,7 @@ public class GetDirectionInfo : MonoBehaviour
             for (int i = 0; i < directions.Count; i++)
             {
                 TextMeshProUGUI txt = directions[i].GetComponent<TextMeshProUGUI>();
+                // Die Ergebnisse des Select Statement werden den GameObject zugewiesen
                 txt.text = result[i];
             }
         }

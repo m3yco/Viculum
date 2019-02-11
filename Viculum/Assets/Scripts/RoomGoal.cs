@@ -9,6 +9,7 @@ using System;
 
 public class RoomGoal : MonoBehaviour
 {
+    // Hier werden die Ziele der Veranstaltung aus der Datenbank angezeigt.
     private TextMeshProUGUI txt;
     private string result = "Ziele:\n\n";
 

@@ -9,6 +9,7 @@ using System;
 
 public class RoomCaption : MonoBehaviour
 {
+    // Nimmt den Namen der Veranstalung aus der Datenbank und zeigt diese an.
     private TextMeshProUGUI txt;
     private string result;
 

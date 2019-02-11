@@ -517,13 +517,13 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 1.5000001, z: 0.9999644}
   m_Children:
   - {fileID: 216315522}
-  m_Father: {fileID: 1263526122}
-  m_RootOrder: 3
+  m_Father: {fileID: 589768534}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -298}
-  m_SizeDelta: {x: -724.5, y: -668}
+  m_AnchoredPosition: {x: 0, y: -295}
+  m_SizeDelta: {x: -500, y: -210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &214468712
 MonoBehaviour:
@@ -666,7 +666,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Zurueck
+  m_text: "Zur\xFCck"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -735,7 +735,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 216315523}
-    characterCount: 7
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -800,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 130}
+  m_AnchoredPosition: {x: 0, y: 250}
   m_SizeDelta: {x: 470, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &374283047
@@ -822,7 +822,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Waehlen Sie eine Vertiefung aus:'
+  m_text: "W\xE4hlen Sie eine Vertiefung aus:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -891,7 +891,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 374283047}
-    characterCount: 32
+    characterCount: 31
     spriteCount: 0
     spaceCount: 4
     wordCount: 5
@@ -956,7 +956,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 270}
+  m_AnchoredPosition: {x: 0, y: 380}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &385950948
@@ -1024,7 +1024,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1349,8 +1349,9 @@ RectTransform:
   - {fileID: 524001366}
   - {fileID: 1806416599}
   - {fileID: 864556353}
+  - {fileID: 214468711}
   m_Father: {fileID: 1263526122}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1916,7 +1917,6 @@ RectTransform:
   - {fileID: 1048107070}
   - {fileID: 385950947}
   - {fileID: 374283046}
-  - {fileID: 214468711}
   - {fileID: 589768534}
   m_Father: {fileID: 0}
   m_RootOrder: 5

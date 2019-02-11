@@ -9,6 +9,7 @@ using System;
 
 public class RoomModul : MonoBehaviour
 {
+    // Hier wird die Information aus der Datenbank geladen ob es ein Pflicht oder Wahlpflichtmoul ist.
     private TextMeshProUGUI txt;
     private string result;
 

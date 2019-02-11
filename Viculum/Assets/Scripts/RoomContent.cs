@@ -6,6 +6,7 @@ using System;
 
 public class RoomContent : MonoBehaviour
 {
+    // Zeigt den Inhalt einer Veranstaltung an aus der Datenbank.
     private TextMeshProUGUI txt;
     private string result = "Inhalte:\n\n";
 

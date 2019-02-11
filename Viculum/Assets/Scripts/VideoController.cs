@@ -6,6 +6,9 @@ using UnityEngine.UI;
 
 public class VideoController : MonoBehaviour
 {
+    // Hier ist der Prototyp für einen Video Controller um das Video zu stoppen,
+    // vorzuspulen usw.
+    // noch nicht komplett implementiert und durchgetestet.
     public VideoPlayer video;
     public Slider slider;
 

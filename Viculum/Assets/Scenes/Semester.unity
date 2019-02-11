@@ -448,7 +448,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 270}
+  m_AnchoredPosition: {x: 0, y: 380}
   m_SizeDelta: {x: 350, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &340630699
@@ -516,7 +516,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 0
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -1259,7 +1259,6 @@ RectTransform:
   - {fileID: 1136879681}
   - {fileID: 340630698}
   - {fileID: 2092268600}
-  - {fileID: 1052967280}
   - {fileID: 1942367839}
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -1454,13 +1453,13 @@ RectTransform:
   m_LocalScale: {x: 0.8, y: 1.5000001, z: 0.9999644}
   m_Children:
   - {fileID: 1835485152}
-  m_Father: {fileID: 835713693}
-  m_RootOrder: 3
+  m_Father: {fileID: 1942367839}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -298}
-  m_SizeDelta: {x: -724.5, y: -668}
+  m_AnchoredPosition: {x: 0, y: -395}
+  m_SizeDelta: {x: -500, y: -210}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1052967281
 MonoBehaviour:
@@ -2545,7 +2544,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: Zurueck
+  m_text: "Zur\xFCck"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -2614,7 +2613,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1835485153}
-    characterCount: 7
+    characterCount: 6
     spriteCount: 0
     spaceCount: 0
     wordCount: 1
@@ -2925,12 +2924,13 @@ RectTransform:
   - {fileID: 1884151746}
   - {fileID: 510918311}
   - {fileID: 1948076132}
+  - {fileID: 1052967280}
   m_Father: {fileID: 835713693}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -26}
+  m_AnchoredPosition: {x: 0, y: -16}
   m_SizeDelta: {x: 900, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1948076131
@@ -3245,7 +3245,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 175}
+  m_AnchoredPosition: {x: 0, y: 250}
   m_SizeDelta: {x: 470, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2092268601
@@ -3267,7 +3267,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: 'Waehlen Sie ein Semester aus:'
+  m_text: "W\xE4hlen Sie ein Semester aus:"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
   m_sharedMaterial: {fileID: 2164040, guid: 5302535af1044152a457ed104f1f4b91, type: 2}
@@ -3336,7 +3336,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 2092268601}
-    characterCount: 29
+    characterCount: 28
     spriteCount: 0
     spaceCount: 4
     wordCount: 5

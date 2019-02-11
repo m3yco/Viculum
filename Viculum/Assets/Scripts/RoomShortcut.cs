@@ -9,6 +9,7 @@ using System;
 
 public class RoomShortcut : MonoBehaviour
 {
+    // Der Kürzel der Veranstaltung wird aus der Datenbank geladen.
     private TextMeshProUGUI txt;
     private string result;
 

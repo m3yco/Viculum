@@ -7,17 +7,26 @@ using TMPro;
 
 public class ChangeScene : MonoBehaviour {
     private string result;
+
+    //Hier werden die Szenenwechseln mit der richtigen Parameter gefüllt und gesetzt.
     public void JumpForward()
     {
         TextMeshProUGUI txt;
         String select;
+        //Es wird jedesmal wenn ein wechsel stattfindet ein anderer select durchgeführt der die Informationen
+        //der jeweiligen Szene ladet. 0 --> Viculum Hauptmenue, 1 --> Studiengangswahl usw.
         switch (SceneManager.GetActiveScene().buildIndex)
         {
             case 0:
+                //Den Text des gedrückten Buttons wird zugewiesen.
                 txt = GameObject.Find(EventSystem.current.currentSelectedGameObject.name + "/Text").GetComponent<TextMeshProUGUI>();
+                //Der Select der den Welchsel zurück organisiert.
                 select = "select fakultaetid from fakultaet where bezeichnung = '"+ txt.text + "'";
+                //Die Id aus dem Select wird gespeichert in der statischen Klasse CrossSceneInformation.
                 CrossSceneInformation.faculty = GetId(select);
+                //Ausgabe auf der Konsole.
                 Debug.Log(CrossSceneInformation.faculty);
+                //Neue Scene wird geladen.
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
             case 1:
@@ -62,6 +71,8 @@ public class ChangeScene : MonoBehaviour {
 
     public void JumpBackward()
     {
+        //Diese Methode organisiert den zurück Sprung in eine vorherige Szene.
+        //Bei Szene 5 & 7 muss man 2 mal Springen um zur Wahl der Vertiefung CPS, AD, ITM zu kommen.
         if (SceneManager.GetActiveScene().buildIndex == 4 && CrossSceneInformation.semester != "5" && CrossSceneInformation.semester != "7")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
@@ -74,10 +85,14 @@ public class ChangeScene : MonoBehaviour {
 
     void Update()
     {
+        //Die Update Methode ist wichtig um den Mouse Courser wieder zu befreien,
+        //weil er in der Raumszene als Kamera benutzt wird. 
         if(SceneManager.GetActiveScene().buildIndex == 5)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = false;
+
+            // Hier Kommando "B"(Back) auf der Tastatur für das zurück springen gesetzt. 
             if (Input.GetKeyDown(KeyCode.B))
             {
                 Cursor.visible = true;
@@ -88,6 +103,8 @@ public class ChangeScene : MonoBehaviour {
 
     public string GetId(String select)
     {
+        //Diese Methode wandelt den Text des gedrückten Buttons um zur
+        //einer Id die gespeichert wird für die nächste Szene
         String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
            "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +

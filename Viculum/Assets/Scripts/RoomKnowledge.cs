@@ -6,6 +6,7 @@ using System;
 
 public class RoomKnowledge: MonoBehaviour
 {
+    // Die Kentnisse einer Veranstaltung werden geladen aus der Datenbank und angezeigt.
     private TextMeshProUGUI txt;
     private string result = "Kenntnisse:\n\n";
 

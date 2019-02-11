@@ -8,11 +8,13 @@ using System;
 
 public class GetExtensionInfo : MonoBehaviour
 {
+    // Initialisierung der Variablen die dem GameObject zugewiesen wurden.
     public TextMeshProUGUI ext1;
     public TextMeshProUGUI ext2;
     public TextMeshProUGUI ext3;
     public TextMeshProUGUI ext4;
 
+    // JDBC Connection String zur Oracle Datenbank.
     String connectionString = "Data Source=(DESCRIPTION=" +
            "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
            "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
@@ -26,6 +28,7 @@ public class GetExtensionInfo : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        // Alle Variablen in eine Liste eingefügt.
         List<TextMeshProUGUI> extensions = new List<TextMeshProUGUI>();
         List<String> result = new List<String>();
         extensions.Add(ext1);

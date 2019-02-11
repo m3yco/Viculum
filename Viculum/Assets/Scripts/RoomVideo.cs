@@ -5,6 +5,8 @@ using TMPro;
 
 public class RoomVideo : MonoBehaviour
 {
+    // Hier wird die Videodatei aus der Datenbank runtergeladen und auf ein lokales Verzeichnis abgelegt.
+    // Der Name wird in der statischen Klasse CrossSceneInformation gespeichert.
     private TextMeshProUGUI txt;
     private string result;
 
@@ -29,6 +31,9 @@ public class RoomVideo : MonoBehaviour
     {
         try
         {
+            // Für Präsentations Zwecke wurde das runterladen deaktiviert,
+            // durch das wieder auskommentieren der unteren Command, CommandType,
+            // Reader und der while-Schleife kann die Funktion wieder eingeschaltet werden.
             txt = GetComponent<TextMeshProUGUI>();
 
             con.ConnectionString = connectionString;
@@ -50,8 +55,6 @@ public class RoomVideo : MonoBehaviour
             //{
             //    byte[] videoByte = (byte[])drData["Beispiel"];
             //    File.WriteAllBytes((@Application.dataPath + "/Video/" + dataName), videoByte);
-
-            //    File.WriteAllBytes(@"C:\Users\dizep\Desktop" + dataName, videoByte);
             //}
             //result = Application.dataPath;
             //txt.text = result;

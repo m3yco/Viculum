@@ -9,6 +9,7 @@ using System;
 
 public class RoomLanguage : MonoBehaviour
 {
+    // Die Sprachen einer Veranstaltung werden aus der Datenbank geladen und angezeigt.
     private TextMeshProUGUI txt;
     private string result;
 

@@ -1,5 +1,9 @@
 ﻿
 public static class CrossSceneInformation {
+    // CrossSceneInformation ist eine statische Klasse, damit wird eine
+    // globale Variable erzeugt mit allen Informationen die Zwischengespeichert
+    // werden sollen. Die Anwendung wird durch diese Klasse dynamisiert.
+
     // Auswahl der Fakultät
     public static string faculty;
 
