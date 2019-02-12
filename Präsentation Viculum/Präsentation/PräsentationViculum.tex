@@ -65,6 +65,7 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage[ngerman]{babel}
 \usepackage{adjustbox}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
@@ -83,19 +84,20 @@
 %----------------------------------------------------------------------------------------
 %	TITLE PAGE
 %----------------------------------------------------------------------------------------
+\title[Viculum]{"VICULUM" \\ Ein virtueller Rundgang durch die Veranstaltungen eines Hochschul-Curriculums } % The short title appears at the bottom of every slide, the full title is only on the title page
 
-\title[Viculum]{Konzept und Realisierung eines virtuellen Themenrundgangs der Fakultät Informatik zur Unterstützung bei der Studienwahl} % The short title appears at the bottom of every slide, the full title is only on the title page
-
-\author{Prof. Dr. Jörg Röhrle} % Your name
-\institute[HSALBSIG] % Your institution as it will appear on the bottom of every slide, may be shorthand to save space
+\author{Altenberg, Dürr, Milazzo, Röhrle}
+\institute[]
 {
 Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 \medskip
-\textit{Domenico Milazzo (TI), milazzdo@hs-albsig.de} % Your email address
+\textit{Fabian Altenberg (WIN), altenbfa@hs-albsig.de} % Your email address
 \newline
 \textit{Maik Dürr (TI), duerrmai@hs-albsig.de} % Your email address
 \newline
-\textit{Fabian Altenberg (WIN), altenbfa@hs-albsig.de} % Your email address
+\textit{Domenico Milazzo (TI), milazzdo@hs-albsig.de} % Your email address
+\newline
+\textit{Prof. Dr. Jörg Röhrle, roehrle@hs-albsig.de} % Your email address
 \newline
 }
 \date{\today} % Date, can be changed to a custom date
@@ -108,12 +110,12 @@ Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 
 \begin{frame}
 \frametitle{Überblick}
-\begin{itemize}
-\item Idee \& Features
-\item Datenmodell
-\item Datenzugriff
-\item Live Demo \& Aussichten
-\end{itemize}
+\begin{enumerate}
+\item Die Idee : Konzept und Realisierung eines virtuellen Rundgangs durch die Veranstaltungen eines Modulhandbuchs 
+\item Das Konzept: Ein Datenmodell zur vollständigen Erfassung eines Curriculums 
+\item Die Realierung - Datenbankzugriff, Virtualisierung, Implementierung der Kommunikationsschicht
+\item Zusammenfassung/Kritik/Ausblick
+\end{enumerate}
 \end{frame}
 
 %----------------------------------------------------------------------------------------
@@ -123,17 +125,25 @@ Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Idee \& Features}
-Viculum ist ein virtuelles Curriculum um die Modulhandbücher jeder Veranstaltungen der Hochschule Albstadt-Sigmaringen mit verschiedensten Medien und einem dynamischen Zugriff aus einer Datenbank zu visualisieren.\\~\\
+\frametitle{Die Idee}
+Implementierung eines natürlichen ("spielerischen") Zugangs zu Studieninhalten, quasi gleichsam als Ersatz der zwar korrekten, jedoch "trockenen" Lektüre des Modulhandbuchs ("Curriculums")
+Projektion eines Studienverlaufs auf ein mehrstöckiges Gebäude, dessen Etagen die einzelnen Studiensemester und deren Räume wiederum die darin angebotenen Veranstaltungen repräsentieren 
+Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewerber!\\~\\
+\end{frame}
 
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Die Idee}
 \begin{itemize}
-\item Erste Hochschule mit diesem Konzept eines "virtuellen Rundgang"
 \item Oracle Datenbank als Speichermedium
 \item Unity als Visualisierung Tool der Virtual Reality
 \item Dynamischen Aufbau der Szenen um Objekte
 \item Bilder \& Video als zusätzliche Medien
 \end{itemize}
 \end{frame}
+
 
 %------------------------------------------------
 
