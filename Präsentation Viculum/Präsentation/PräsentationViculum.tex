@@ -65,7 +65,7 @@
 
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
-\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
 \usepackage{adjustbox}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta}
@@ -126,6 +126,7 @@ Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 
 \begin{frame}
 \frametitle{Die Idee}
+\textbf{Grundgedanke}\\~\\
 Implementierung eines natürlichen ("spielerischen") Zugangs zu Studieninhalten, quasi gleichsam als Ersatz der zwar korrekten, jedoch "trockenen" Lektüre des Modulhandbuchs ("Curriculums")
 Projektion eines Studienverlaufs auf ein mehrstöckiges Gebäude, dessen Etagen die einzelnen Studiensemester und deren Räume wiederum die darin angebotenen Veranstaltungen repräsentieren 
 Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewerber!\\~\\
@@ -136,11 +137,23 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 
 \begin{frame}
 \frametitle{Die Idee}
+\textbf{Ziele}
 \begin{itemize}
-\item Oracle Datenbank als Speichermedium
-\item Unity als Visualisierung Tool der Virtual Reality
-\item Dynamischen Aufbau der Szenen um Objekte
-\item Bilder \& Video als zusätzliche Medien
+\item Implementierung eines natürlichen ("spielerischen") Zugangs zu Studieninhalten, quasi gleichsam als Ersatz der zwar korrekten, jedoch "trockenen" Lektüre des Modulhandbuchs ("Curriculums")
+\item Projektion eines Studienverlaufs auf ein mehrstöckiges Gebäude, dessen Etagen die einzelnen Studiensemester und deren Räume wiederum die darin angebotenen Veranstaltungen repräsentieren 
+\item Recherchen ergaben:  Bis dato keine vergleichbaren Realisierungen unserer Mitbewerber!
+\end{itemize}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Die Idee}
+\textbf{Pflichtenheft}
+\begin{itemize}
+\item Datenbankgestützte Erfassung des vollständigen Modulhandbuchs zur Bewirtschaftung aller beteiligten Ressourcen 
+\item Dynamische Erzeugung von "Szenen", i.e. Veranstaltungen, Studiensemestern ("Etagen"), sowie deren Inhalte und  Zusammenhänge als virtuelle Räumlichkeiten 
+\item Zusätzlich Möglichkeit zur Darstellung "repräsentativer" inhaltlicher Auszüge einzelner Veranstaltungen durch Bilder, Tafelaufschriebe oder Videos
 \end{itemize}
 \end{frame}
 
@@ -148,7 +161,19 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Datenbankmodell}
+\frametitle{Das Konzept - Auswahl der Realisierungsmedien}
+\begin{itemize}
+\item Serverdatenbanksystem \textbf{ORACLE} als Speichermedium
+\item \textbf{"Unity"} zur virtuellen Darstellung von Räumen, Inhalten und Querverweisen 
+\item \textbf{C\#} zur Implementierung der Controllerschicht zwichen Datenbank und Virtualisierungssoftware
+\end{itemize}
+\end{frame}
+
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Das Konzept - Datenbankmodell zur Bewirtschaftung eines Hochschul-Curriculums}
 \begin{center}
 \includegraphics[width=0.8\textwidth]{pictures/Datenmodell_Viculum.png}
 \end{center}
@@ -158,36 +183,30 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 %------------------------------------------------
 
 \begin{frame}
-\frametitle{Datenzugriff}
-\begin{adjustbox}{totalheight=\textheight-3\baselineskip}
+\frametitle{Das Konzept - Schema der dynamischen Erzeugung von virtualisierten Inhalten}
+\begin{adjustbox}{totalheight=\textheight-5\baselineskip}
 \begin{columns}[c] % The "c" option specifies centered vertical alignment while the "t" option is used for top vertical alignment
 
-\column{.45\textwidth} % Left column and width
+\column{.5\textwidth} % Left column and width
 
 \textbf{Ablauf}
 \begin{enumerate}
-\item Szenen wird gestartet und holt sich aus der statischen Klasse die Informationen aus der vorherigen Szene.
-\item Leeres Objekt wird angestoßen und mit den Szeneninformation gefüllt.
-\item Das C\# Script des leeren Objekt wird ausgeführt.
-\item Datenbankzugriff auf die Oracle Datenbank durch Select Statement und deren Auswertung.
-\item Die Informationen der Auswertung werden im Objekt angezeigt.
+\item Start einer "Szene" -  Erzeugung eines generischen Unity - Raumobjektes
+\item Instanziierung des Raumobjektes und dadurch Schaffung einer konkreten Veranstaltungsszene durch dynamischen Datenbankzugriff via C\#
+\item  Anzeige der konkreten Raumszene mit den Inhalten einer Veranstaltung, ihren Abhängigkeiten innerhalb des Curriculums sowie repräsentativen Darstellungen durch Bilder, Texten und/oder Videos
 \end{enumerate}
 
 \column{.3\textwidth} % Right column and width
-\begin{tikzpicture}[node distance=1.5cm,
+\begin{tikzpicture}[node distance=3.5cm,
     every node/.style={fill=white, font=\sffamily}, align=center]
   % Specification of nodes (position, etc.)
   \node (start)             [activityStarts]              	{Szenen start};
-  \node (Object)     [process, below of=start]  {Objekt anstoßen};
-  \node (Script)      [process, below of=Object]{Script ausführen};
-  \node (DB)     [process, below of=Script]   		{Datenbankzugriff};
-  \node (end)      [activityRuns, below of=DB]		{Objekt mit Daten befüllt};   
+  \node (Object)     [process, below of=start]  {Instanziierung des Raumobjektes};
+  \node (end)     [activityRuns, below of=Object]   		{Anzeige};  
   % Specification of lines between nodes specified above
   % with aditional nodes for description 
-  \draw[->]             (start) -- (Object);
-  \draw[->]     		(Object) -- (Script);
-  \draw[->]      		(Script) -- (DB);
-  \draw[->]     		(DB) -- (end);
+  \draw[->]             (start) -- (Object) node[pos=.5] {Ausführung des Szenenscript};
+  \draw[->]     		(Object) -- (end) node[pos=.5] {Datenbankzugriff über Objektskript};
   \end{tikzpicture}
 
 
@@ -199,5 +218,32 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 
 \begin{frame}
 \Huge{\centerline{Demo}}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}
+\frametitle{Zusammenfassung/Kritik/Ausblick}
+\textbf{Zusammenfassung}
+\begin{itemize}
+\item {Etwas "neues" erschaffen!}
+\item {Komplett funktionsfähigen Prototypen}
+\item {Dynamisch und Austauschbares System kreiert, weil Unity nur als Darstellungselement für die Datenbank fungiert}
+%\item {Konzept auch in vergleichbare Bereichen übertragbar}
+\end{itemize}
+\textbf{Kritik}
+\begin{itemize}
+\item {Aufwändige Recherche}
+\item {Viel Zeit in der Einarbeitung in Unity \& C\#}
+%\item {Implementierung in eine Webanwendung}
+%\item {Konzept auch in vergleichbare Bereichen übertragbar}
+\end{itemize}
+\textbf{Ausblick}
+\begin{itemize}
+\item {Auswertung der Schüler Umfragen}
+\item {Animationen \& Assets}
+\item {Implementierung in eine Webanwendung}
+\item {Konzept auch in vergleichbare Bereichen übertragbar}
+\end{itemize}
 \end{frame}
 \end{document} 
