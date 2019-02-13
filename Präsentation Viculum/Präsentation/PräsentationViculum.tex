@@ -113,7 +113,7 @@ Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 \begin{enumerate}
 \item Die Idee : Konzept und Realisierung eines virtuellen Rundgangs durch die Veranstaltungen eines Modulhandbuchs 
 \item Das Konzept: Ein Datenmodell zur vollständigen Erfassung eines Curriculums 
-\item Die Realierung - Datenbankzugriff, Virtualisierung, Implementierung der Kommunikationsschicht
+\item Die Realisierung - Datenbankzugriff, Virtualisierung, Implementierung der Kommunikationsschicht
 \item Zusammenfassung/Kritik/Ausblick
 \end{enumerate}
 \end{frame}
@@ -122,22 +122,9 @@ Hochschule Albstadt-Sigmaringen \\ % Your institution for the title page
 %	PRESENTATION SLIDES
 %----------------------------------------------------------------------------------------
 
-%------------------------------------------------
-
 \begin{frame}
 \frametitle{Die Idee}
-\textbf{Grundgedanke}\\~\\
-Implementierung eines natürlichen ("spielerischen") Zugangs zu Studieninhalten, quasi gleichsam als Ersatz der zwar korrekten, jedoch "trockenen" Lektüre des Modulhandbuchs ("Curriculums")
-Projektion eines Studienverlaufs auf ein mehrstöckiges Gebäude, dessen Etagen die einzelnen Studiensemester und deren Räume wiederum die darin angebotenen Veranstaltungen repräsentieren 
-Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewerber!\\~\\
-\end{frame}
-
-
-%------------------------------------------------
-
-\begin{frame}
-\frametitle{Die Idee}
-\textbf{Ziele}
+\textbf{Grundgedanke}
 \begin{itemize}
 \item Implementierung eines natürlichen ("spielerischen") Zugangs zu Studieninhalten, quasi gleichsam als Ersatz der zwar korrekten, jedoch "trockenen" Lektüre des Modulhandbuchs ("Curriculums")
 \item Projektion eines Studienverlaufs auf ein mehrstöckiges Gebäude, dessen Etagen die einzelnen Studiensemester und deren Räume wiederum die darin angebotenen Veranstaltungen repräsentieren 
@@ -165,7 +152,7 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 \begin{itemize}
 \item Serverdatenbanksystem \textbf{ORACLE} als Speichermedium
 \item \textbf{"Unity"} zur virtuellen Darstellung von Räumen, Inhalten und Querverweisen 
-\item \textbf{C\#} zur Implementierung der Controllerschicht zwichen Datenbank und Virtualisierungssoftware
+\item \textbf{C\#} zur Implementierung der Controllerschicht zwischen Datenbank und Virtualisierungssoftware
 \end{itemize}
 \end{frame}
 
@@ -193,7 +180,7 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 \begin{enumerate}
 \item Start einer "Szene" -  Erzeugung eines generischen Unity - Raumobjektes
 \item Instanziierung des Raumobjektes und dadurch Schaffung einer konkreten Veranstaltungsszene durch dynamischen Datenbankzugriff via C\#
-\item  Anzeige der konkreten Raumszene mit den Inhalten einer Veranstaltung, ihren Abhängigkeiten innerhalb des Curriculums sowie repräsentativen Darstellungen durch Bilder, Texten und/oder Videos
+\item  Anzeige der konkreten Raumszene mit den Inhalten einer Veranstaltung, ihren Abhängigkeiten innerhalb des Curriculums sowie repräsentativen Darstellungen durch Bilder, Texte und/oder Videos
 \end{enumerate}
 
 \column{.3\textwidth} % Right column and width
@@ -228,7 +215,7 @@ Recherchen ergaben: Bis dato keine vergleichbaren Realisierungen unserer Mitbewe
 \begin{itemize}
 \item {Etwas "neues" erschaffen!}
 \item {Komplett funktionsfähigen Prototypen}
-\item {Dynamisch und Austauschbares System kreiert, weil Unity nur als Darstellungselement für die Datenbank fungiert}
+\item {Dynamisches und austauschbares System kreiert, weil Unity nur als Darstellungselement für die Datenbank fungiert}
 %\item {Konzept auch in vergleichbare Bereichen übertragbar}
 \end{itemize}
 \textbf{Kritik}

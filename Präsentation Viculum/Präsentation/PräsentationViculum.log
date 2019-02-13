@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  12 FEB 2019 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  13 FEB 2019 10:29
 entering extended mode
 **./PräsentationViculum.tex
 (PräsentationViculum.tex
@@ -1118,48 +1118,45 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [5
 
 ]
-[6
-
-]
-<pictures/Datenmodell_Viculum.png, id=185, 711.1368pt x 544.9158pt>
+<pictures/Datenmodell_Viculum.png, id=159, 711.1368pt x 544.9158pt>
 File: pictures/Datenmodell_Viculum.png Graphic file (type png)
 <use pictures/Datenmodell_Viculum.png>
 Package pdftex.def Info: pictures/Datenmodell_Viculum.png  used on input line 1
-80.
+67.
 (pdftex.def)             Requested size: 273.83728pt x 209.83064pt.
 
-Overfull \vbox (1.36pt too high) detected at line 180
+Overfull \vbox (1.36pt too high) detected at line 167
  []
 
-[7
+[6
 
  <./pictures/Datenmodell_Viculum.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 215.
+LaTeX Font Info:    Try loading font information for U+msa on input line 202.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 215.
+LaTeX Font Info:    Try loading font information for U+msb on input line 202.
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 215.
+line 202.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sansmathaccent\ot1
 mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-Overfull \hbox (83.21892pt too wide) in paragraph at lines 215--215
+Overfull \hbox (83.21892pt too wide) in paragraph at lines 202--202
 [][]  
  []
 
-[8
+[7
+
+] [8
 
 ] [9
-
-] [10
 
 ]
 \tf@nav=\write6
@@ -1171,34 +1168,37 @@ Overfull \hbox (83.21892pt too wide) in paragraph at lines 215--215
 \tf@snm=\write8
 \openout8 = `PräsentationViculum.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 249.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 249.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
  (PräsentationViculum.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 249.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 249.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 236.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 236.
 Package rerunfilecheck Info: File `PräsentationViculum.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21589 strings out of 492946
- 433510 string characters out of 3126266
- 505029 words of memory out of 3000000
+ 21588 strings out of 492946
+ 433503 string characters out of 3126266
+ 505011 words of memory out of 3000000
  24969 multiletter control sequences out of 15000+200000
  11509 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,65p,789b,1210s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmss10.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
-blic/amsfonts/cm/cmss12.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/domen/AppData/Local/Programs
-/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/domen/AppData/Lo
-cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/d
-omen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pf
-b><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
-/cm/cmtt10.pfb>
-Output written on PräsentationViculum.pdf (10 pages, 189174 bytes).
+pdfTeX warning (dest): name{Navigation10} has been referenced but does not ex
+ist, replaced by a fixed one
+
+<C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmss10.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmss12.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/domen/AppData/Local/Programs/M
+iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/domen/AppData/Loca
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/dom
+en/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
+<C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb>
+Output written on PräsentationViculum.pdf (9 pages, 183536 bytes).
 PDF statistics:
- 321 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 296 PDF objects out of 1000 (max. 8388607)
+ 20 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
