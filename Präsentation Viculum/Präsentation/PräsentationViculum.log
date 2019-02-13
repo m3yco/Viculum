@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  13 FEB 2019 10:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  13 FEB 2019 10:35
 entering extended mode
 **./PräsentationViculum.tex
 (PräsentationViculum.tex
@@ -1177,28 +1177,25 @@ Package rerunfilecheck Info: File `PräsentationViculum.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21588 strings out of 492946
- 433503 string characters out of 3126266
- 505011 words of memory out of 3000000
- 24969 multiletter control sequences out of 15000+200000
+ 21581 strings out of 492946
+ 433414 string characters out of 3126266
+ 504995 words of memory out of 3000000
+ 24963 multiletter control sequences out of 15000+200000
  11509 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,65p,789b,1210s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{Navigation10} has been referenced but does not ex
-ist, replaced by a fixed one
-
-<C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmss10.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
-ic/amsfonts/cm/cmss12.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/domen/AppData/Local/Programs/M
-iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/domen/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/dom
-en/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pfb>
-<C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmtt10.pfb>
-Output written on PräsentationViculum.pdf (9 pages, 183536 bytes).
+<C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmss10.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmss12.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmss17.pfb><C:/Users/domen/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmss8.pfb><C:/Users/domen/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/d
+omen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pf
+b><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
+/cm/cmtt10.pfb>
+Output written on PräsentationViculum.pdf (9 pages, 183182 bytes).
 PDF statistics:
- 296 PDF objects out of 1000 (max. 8388607)
- 20 named destinations out of 1000 (max. 500000)
+ 295 PDF objects out of 1000 (max. 8388607)
+ 19 named destinations out of 1000 (max. 500000)
  72 words of extra memory for PDF output out of 10000 (max. 10000000)
 
