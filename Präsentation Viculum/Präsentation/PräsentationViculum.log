@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  13 FEB 2019 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  18 FEB 2019 20:26
 entering extended mode
 **./PräsentationViculum.tex
 (PräsentationViculum.tex
@@ -931,20 +931,20 @@ File: pgflibraryarrows.meta.code.tex 2019/01/05 v3.1 (3.1)
 ) (PräsentationViculum.aux)
 \openout1 = `PräsentationViculum.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 105.
-LaTeX Font Info:    ... okay on input line 105.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 107.
+LaTeX Font Info:    ... okay on input line 107.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1012,7 +1012,7 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 ) ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box62
-Package hyperref Info: Link coloring OFF on input line 105.
+Package hyperref Info: Link coloring OFF on input line 107.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/hyperref\nameref.s
 ty"
@@ -1024,65 +1024,65 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count178
 )
-LaTeX Info: Redefining \ref on input line 105.
-LaTeX Info: Redefining \pageref on input line 105.
-LaTeX Info: Redefining \nameref on input line 105.
+LaTeX Info: Redefining \ref on input line 107.
+LaTeX Info: Redefining \pageref on input line 107.
+LaTeX Info: Redefining \nameref on input line 107.
  (PräsentationViculum.out) (PräsentationViculum.out)
 \@outlinefile=\write5
 \openout5 = `PräsentationViculum.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 105.
+(Font)                  OT1/cmr/m/n --> OT1/cmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 105.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 107.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 105.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 105.
+(Font)                  OT1/cmss/m/n --> OT1/cmr/m/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 105.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 105.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 105.
+(Font)                  OT1/cmr/bx/n --> OT1/cmss/bx/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 105.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 105.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 105.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/m/n on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 105.
+(Font)                  OT1/cmr/m/it --> OT1/cmss/m/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 105.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 105.
+(Font)                  OT1/cmr/bx/it --> OT1/cmss/m/it on input line 107.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 105.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 105.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/m/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 105.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 105.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 105.
+(Font)                  OT1/cmss/bx/n --> OT1/cmr/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 105.
+(Font)                  OT1/cmss/bx/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 105.
+(Font)                  OT1/cmss/m/n --> OT1/cmss/bx/n on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 105.
+(Font)                  OT1/cmss/m/it --> OT1/cmss/bx/it on input line 107.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 105.
-LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 105.
+(Font)                  OT1/cmtt/m/n --> OT1/cmtt/bx/n on input line 107.
+LaTeX Font Info:    Redeclaring symbol font `pureletters' on input line 107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `normal'
 (Font)                  OT1/cmss/m/it --> OT1/mathkerncmss/m/sl on input line 1
-05.
+07.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/cmss/bx/it --> OT1/mathkerncmss/m/sl on input line 
-105.
+107.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
 (Font)                  OT1/mathkerncmss/m/sl --> OT1/mathkerncmss/bx/sl on inp
-ut line 105.
+ut line 107.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/translator\transla
 tor-basic-dictionary-English.dict"
@@ -1115,50 +1115,52 @@ Dictionary: translator-theorem-dictionary, Language: English
 
 ] [4
 
-] [5
-
 ]
-<pictures/Datenmodell_Viculum.png, id=159, 711.1368pt x 544.9158pt>
-File: pictures/Datenmodell_Viculum.png Graphic file (type png)
-<use pictures/Datenmodell_Viculum.png>
-Package pdftex.def Info: pictures/Datenmodell_Viculum.png  used on input line 1
-68.
-(pdftex.def)             Requested size: 273.83728pt x 209.83064pt.
-
-Overfull \vbox (1.36pt too high) detected at line 168
- []
-
-[6
-
- <./pictures/Datenmodell_Viculum.png>]
-LaTeX Font Info:    Try loading font information for U+msa on input line 203.
+LaTeX Font Info:    Try loading font information for U+msa on input line 171.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 203.
+LaTeX Font Info:    Try loading font information for U+msb on input line 171.
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 203.
+line 171.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sansmathaccent\ot1
 mathkerncmss.fd"
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
-)
-Overfull \hbox (83.21892pt too wide) in paragraph at lines 203--203
-[][]  
+) [5
+
+] [6
+
+]
+<pictures/Datenmodell_Viculum.png, id=185, 711.1368pt x 544.9158pt>
+File: pictures/Datenmodell_Viculum.png Graphic file (type png)
+<use pictures/Datenmodell_Viculum.png>
+Package pdftex.def Info: pictures/Datenmodell_Viculum.png  used on input line 1
+93.
+(pdftex.def)             Requested size: 273.83728pt x 209.83064pt.
+
+Overfull \vbox (1.36pt too high) detected at line 193
  []
 
 [7
 
-] [8
+ <./pictures/Datenmodell_Viculum.png>]
+Overfull \hbox (83.21892pt too wide) in paragraph at lines 228--228
+[][]  
+ []
+
+[8
 
 ] [9
 
 ] [10
+
+] [11
 
 ]
 \tf@nav=\write6
@@ -1170,19 +1172,19 @@ Overfull \hbox (83.21892pt too wide) in paragraph at lines 203--203
 \tf@snm=\write8
 \openout8 = `PräsentationViculum.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 244.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 244.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
  (PräsentationViculum.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 244.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 244.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
 Package rerunfilecheck Info: File `PräsentationViculum.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21606 strings out of 492946
- 434031 string characters out of 3126266
- 505041 words of memory out of 3000000
- 24986 multiletter control sequences out of 15000+200000
+ 21611 strings out of 492946
+ 434073 string characters out of 3126266
+ 505109 words of memory out of 3000000
+ 24989 multiletter control sequences out of 15000+200000
  11816 words of font info for 43 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,65p,789b,1210s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1195,9 +1197,9 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/d
 omen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pf
 b><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on PräsentationViculum.pdf (10 pages, 190572 bytes).
+Output written on PräsentationViculum.pdf (11 pages, 196594 bytes).
 PDF statistics:
- 323 PDF objects out of 1000 (max. 8388607)
- 21 named destinations out of 1000 (max. 500000)
+ 349 PDF objects out of 1000 (max. 8388607)
+ 23 named destinations out of 1000 (max. 500000)
  78 words of extra memory for PDF output out of 10000 (max. 10000000)
 
