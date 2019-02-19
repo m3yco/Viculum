@@ -50,10 +50,16 @@ public class RoomRequire : MonoBehaviour
             cmd = new OracleCommand(select, con);
             cmd.CommandType = System.Data.CommandType.Text;
             dr = cmd.ExecuteReader();
+            int jump = 0;
             while (dr.Read())
             {
                 string Bezeichnung = (string)dr.GetValue(0);
                 result += "+ " + Bezeichnung + "\n";
+                if (jump == 0)
+                {
+                    CrossSceneInformation.jump = Bezeichnung;
+                    jump++;
+                }
             }
 
             txt.text = result;

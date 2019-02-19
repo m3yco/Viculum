@@ -24,6 +24,8 @@ public class ChangeScene : MonoBehaviour {
                 select = "select fakultaetid from fakultaet where bezeichnung = '"+ txt.text + "'";
                 //Die Id aus dem Select wird gespeichert in der statischen Klasse CrossSceneInformation.
                 CrossSceneInformation.faculty = GetId(select);
+                // Anzeigetafel Variable befüllen!
+                CrossSceneInformation.anzeige.Add(txt.text);
                 //Ausgabe auf der Konsole.
                 Debug.Log(CrossSceneInformation.faculty);
                 //Neue Scene wird geladen.
@@ -33,6 +35,8 @@ public class ChangeScene : MonoBehaviour {
                 txt = GameObject.Find(EventSystem.current.currentSelectedGameObject.name + "/Text").GetComponent<TextMeshProUGUI>();
                 select = "select studiengangid from studiengang where bezeichnung = '" + txt.text + "'";
                 CrossSceneInformation.direction = GetId(select);
+                // Anzeigetafel Variable befüllen!
+                CrossSceneInformation.anzeige.Add(txt.text);
                 Debug.Log(CrossSceneInformation.direction);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
@@ -40,6 +44,8 @@ public class ChangeScene : MonoBehaviour {
                 txt = GameObject.Find(EventSystem.current.currentSelectedGameObject.name + "/Text").GetComponent<TextMeshProUGUI>();
                 String semesterid = txt.text.Substring(0, 1);
                 CrossSceneInformation.semester = semesterid;
+                // Anzeigetafel Variable befüllen!
+                CrossSceneInformation.anzeige.Add(txt.text);
                 Debug.Log(CrossSceneInformation.semester);
                 if (CrossSceneInformation.semester == "5" || CrossSceneInformation.semester == "7")
                 {
@@ -54,6 +60,8 @@ public class ChangeScene : MonoBehaviour {
                 txt = GameObject.Find(EventSystem.current.currentSelectedGameObject.name + "/Text").GetComponent<TextMeshProUGUI>();
                 select = "select wahlrichtungid from wahlrichtung where bezeichnung = '" + txt.text + "'";
                 CrossSceneInformation.extension = GetId(select);
+                // Anzeigetafel Variable befüllen!
+                CrossSceneInformation.anzeige.Add(txt.text);
                 Debug.Log(CrossSceneInformation.extension);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
                 break;
@@ -61,6 +69,8 @@ public class ChangeScene : MonoBehaviour {
                 txt = GameObject.Find(EventSystem.current.currentSelectedGameObject.name + "/Text").GetComponent<TextMeshProUGUI>();
                 select = "select modulid from modul where bezeichnung='" + txt.text + "'";
                 CrossSceneInformation.modul = GetId(select);
+                // Anzeigetafel Variable befüllen!
+                CrossSceneInformation.anzeige.Add(txt.text);
                 Debug.Log(CrossSceneInformation.modul);
                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1,LoadSceneMode.Single);
                 break;
@@ -76,10 +86,12 @@ public class ChangeScene : MonoBehaviour {
         if (SceneManager.GetActiveScene().buildIndex == 4 && CrossSceneInformation.semester != "5" && CrossSceneInformation.semester != "7")
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+            CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
         }
         else
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+            CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
         }
     }
 
@@ -95,8 +107,17 @@ public class ChangeScene : MonoBehaviour {
             // Hier Kommando "B"(Back) auf der Tastatur für das zurück springen gesetzt. 
             if (Input.GetKeyDown(KeyCode.B))
             {
+                CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
                 Cursor.visible = true;
-                SceneManager.LoadScene("Modul", LoadSceneMode.Single);
+                SceneManager.LoadScene("Modul", LoadSceneMode.Single); 
+            }
+
+            // Hier Kommando "J"(Jump) auf der Tastatur um in die Aufbau Veranstaltung zu springen.
+            if (Input.GetKeyDown(KeyCode.J))
+            {
+                //CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
+                //Cursor.visible = true;
+                //SceneManager.LoadScene("Modul", LoadSceneMode.Single);
             }
         }
     }

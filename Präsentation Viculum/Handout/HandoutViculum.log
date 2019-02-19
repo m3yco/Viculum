@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  11 FEB 2019 16:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  19 FEB 2019 20:54
 entering extended mode
 **./HandoutViculum.tex
 (HandoutViculum.tex
@@ -947,21 +947,21 @@ Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 102.
 See the caption package documentation for explanation.
 
-<figures/ViculumRoom1.png, id=9, 539.01375pt x 295.1025pt>
+<figures/ViculumRoom1.png, id=9, 952.05687pt x 466.24188pt>
 File: figures/ViculumRoom1.png Graphic file (type png)
 <use figures/ViculumRoom1.png>
 Package pdftex.def Info: figures/ViculumRoom1.png  used on input line 103.
-(pdftex.def)             Requested size: 910.01912pt x 498.23187pt.
+(pdftex.def)             Requested size: 910.01912pt x 445.6805pt.
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
 (caption)                particular \caption on input line 104.
 See the caption package documentation for explanation.
 
-<figures/ViculumRoom2.png, id=10, 540.0175pt x 310.15875pt>
+<figures/ViculumRoom2.png, id=10, 937.5025pt x 392.46625pt>
 File: figures/ViculumRoom2.png Graphic file (type png)
 <use figures/ViculumRoom2.png>
 Package pdftex.def Info: figures/ViculumRoom2.png  used on input line 105.
-(pdftex.def)             Requested size: 910.01912pt x 522.6817pt.
+(pdftex.def)             Requested size: 910.01912pt x 380.95528pt.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 118.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/psnfss\omsptm.fd"
@@ -1007,7 +1007,7 @@ cm/cmsy10.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/urw
 e1/urw/times/utmb8a.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on HandoutViculum.pdf (1 page, 1052320 bytes).
+Output written on HandoutViculum.pdf (1 page, 2096621 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  10 named destinations out of 1000 (max. 500000)

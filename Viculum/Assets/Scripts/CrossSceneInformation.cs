@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 public static class CrossSceneInformation {
     // CrossSceneInformation ist eine statische Klasse, damit wird eine
     // globale Variable erzeugt mit allen Informationen die Zwischengespeichert
@@ -21,4 +23,10 @@ public static class CrossSceneInformation {
 
     // Video Name
     public static string video;
+
+    // Jump Modulname
+    public static string jump;
+
+    // Informationen der Anzeigetafel
+    public static List<string> anzeige = new List<string>();
 }
