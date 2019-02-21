@@ -88,6 +88,11 @@ public class ChangeScene : MonoBehaviour {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
             CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
         }
+        //else if (SceneManager.GetActiveScene().buildIndex == 4 && CrossSceneInformation.semester == "5" && CrossSceneInformation.semester == "7")
+        //{
+        //    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        //    CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
+        //}
         else
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
@@ -115,9 +120,12 @@ public class ChangeScene : MonoBehaviour {
             // Hier Kommando "J"(Jump) auf der Tastatur um in die Aufbau Veranstaltung zu springen.
             if (Input.GetKeyDown(KeyCode.J))
             {
-                //CrossSceneInformation.anzeige.RemoveAt(CrossSceneInformation.anzeige.Count - 1);
-                //Cursor.visible = true;
-                //SceneManager.LoadScene("Modul", LoadSceneMode.Single);
+                // Schreibe statische Klasse mit neuen Informationen um
+                setJumpInfo(CrossSceneInformation.jump);
+                extensionExsists(CrossSceneInformation.jump);
+                // --> Wenn Sprung auswertung ob dann Wahlrichtung vorhanden ist wenn ja einfügen!
+
+                SceneManager.LoadScene("Room", LoadSceneMode.Single);
             }
         }
     }
@@ -160,5 +168,58 @@ public class ChangeScene : MonoBehaviour {
             con = null;
         }
         return result;
+    }
+
+    public void setJumpInfo(String modulName)
+    {
+
+        String connectionString = "Data Source=(DESCRIPTION=" +
+           "(ADDRESS=(PROTOCOL=TCP)(HOST=orahost)(PORT=1521))" +
+           "(CONNECT_DATA=(SERVICE_NAME=infdb.inf.hs-albsig.de)));" +
+           "User Id = projektstudium; Password = projektstudium; ";
+
+        OracleConnection con = new OracleConnection();
+        string select = "select s.semesterid, m.modulid from semesterveranstaltung s, modul m " +
+            "where s.modulid = m.modulid " +
+            "and m.modulid = (select modulid from modul where bezeichnung = '"+ modulName + "')";
+
+        long semesterid = 0;
+        long modulid = 0;
+
+        try
+        {
+            con.ConnectionString = connectionString;
+            con.Open();
+
+            OracleCommand cmd = new OracleCommand(select, con);
+            cmd.CommandType = System.Data.CommandType.Text;
+            OracleDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                semesterid = dr.GetInt32(0);
+                modulid = dr.GetInt32(1);
+            }
+            dr.Dispose();
+        }
+        catch (Exception ex)
+        {
+            Debug.Log(ex.Message);
+            Debug.Log(ex.StackTrace);
+        }
+        finally
+        {
+            con.Close();
+            con.Dispose();
+            con = null;
+        }
+
+        // Alle Variablen befüllen nicht nur Semester und modul!
+        CrossSceneInformation.semester = semesterid.ToString();
+        CrossSceneInformation.modul = modulid.ToString();
+    }
+
+    public void extensionExsists(String modulName)
+    {
+        //Abfrage ob Modul beim Sprung eine Vertiefung hat!
     }
 }

@@ -14,7 +14,7 @@ public class RoomImage : MonoBehaviour
            "User Id = projektstudium; Password = projektstudium; ";
 
     // Hier der Select für den blob des Bildes.
-    String select = "select BEISPIEL from MODULMEDIUM where dateiformat in ('.png','.jpg') and MODULMEDIUMID in " +
+    String select = "select BEISPIEL from MODULMEDIUM where dateiformat in ('.png','.jpg', '.JPG') and MODULMEDIUMID in " +
                     "(select MODULMEDIUMID from VERANSTALTUNGSMATERIAL where SEMESTERVERANSTALTUNGID in "+
                     "(select SEMESTERVERANSTALTUNGID from SEMESTERVERANSTALTUNG where SEMESTERVERANSTALTUNG.MODULID=" + CrossSceneInformation.modul + "))";
     OracleConnection con = new OracleConnection();

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  18 FEB 2019 20:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.1.14)  21 FEB 2019 23:27
 entering extended mode
 **./PräsentationViculum.tex
 (PräsentationViculum.tex
@@ -1116,17 +1116,17 @@ Dictionary: translator-theorem-dictionary, Language: English
 ] [4
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 171.
+LaTeX Font Info:    Try loading font information for U+msa on input line 172.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 171.
+LaTeX Font Info:    Try loading font information for U+msb on input line 172.
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Try loading font information for OT1+mathkerncmss on input 
-line 171.
+line 172.
 
 ("C:\Users\domen\AppData\Local\Programs\MiKTeX 2.9\tex/latex/sansmathaccent\ot1
 mathkerncmss.fd"
@@ -1141,16 +1141,16 @@ thkerncmss.
 File: pictures/Datenmodell_Viculum.png Graphic file (type png)
 <use pictures/Datenmodell_Viculum.png>
 Package pdftex.def Info: pictures/Datenmodell_Viculum.png  used on input line 1
-93.
+94.
 (pdftex.def)             Requested size: 273.83728pt x 209.83064pt.
 
-Overfull \vbox (1.36pt too high) detected at line 193
+Overfull \vbox (1.36pt too high) detected at line 194
  []
 
 [7
 
  <./pictures/Datenmodell_Viculum.png>]
-Overfull \hbox (83.21892pt too wide) in paragraph at lines 228--228
+Overfull \hbox (83.21892pt too wide) in paragraph at lines 229--229
 [][]  
  []
 
@@ -1172,11 +1172,11 @@ Overfull \hbox (83.21892pt too wide) in paragraph at lines 228--228
 \tf@snm=\write8
 \openout8 = `PräsentationViculum.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 269.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 269.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 270.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 270.
  (PräsentationViculum.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 269.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 269.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 270.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 270.
 Package rerunfilecheck Info: File `PräsentationViculum.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
@@ -1197,7 +1197,7 @@ cal/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Users/d
 omen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssi8.pf
 b><C:/Users/domen/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmtt10.pfb>
-Output written on PräsentationViculum.pdf (11 pages, 196594 bytes).
+Output written on PräsentationViculum.pdf (11 pages, 196621 bytes).
 PDF statistics:
  349 PDF objects out of 1000 (max. 8388607)
  23 named destinations out of 1000 (max. 500000)
